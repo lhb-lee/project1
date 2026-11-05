@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+    color: #1a2536;
+    background-color: #f4f7fb;
+}
+
+/* 2. 頁首：採用東協皇家藍底色 (#0033A0) 搭配東協紅頂部飾條 (#EE1C25) 與稻穗黃底線 (#FFD100) */
+header {
+    padding: 34px 36px;
+    background-color: #0033A0;
+    color: #FFFFFF;
+    border-top: 12px solid #EE1C25;
+    border-bottom: 5px solid #FFD100;
+    border-radius: 16px;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+small {
+    font-size: 0.85em;
+    font-style: normal;
+}
+
+/* 3. 導覽與連結：改為橢圓形（膠囊狀 border-radius: 999px）設計 */
+nav {
+    margin: 24px 0;
+    padding: 20px 32px;
+    background-color: #e6eefc;
+    border: 2px solid #0033A0;
+    border-radius: 999px;
+    text-align: center;
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    border: 0;
+    font-size: 1.1rem;
+    color: #0033A0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 6px;
+}
+
+/* 導覽列按鈕：橢圓形膠囊按鈕，白底藍字配黃框 */
+nav a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #FFFFFF;
+    color: #0033A0;
+    font-weight: bold;
+    border: 2px solid #FFD100;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+a {
+    color: #0033A0;
+    text-underline-offset: 4px;
+    overflow-wrap: anywhere;
+}
+
+/* 滑鼠移入導覽按鈕時變成東協紅底白字 */
+nav a:hover {
+    background-color: #EE1C25;
+    color: #FFFFFF;
+    border-color: #EE1C25;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EE1C25;
+    text-decoration: underline;
+}
+
+a:focus-visible, summary:focus-visible {
+    outline: 3px solid #FFD100;
+    outline-offset: 4px;
+}
+
+/* 4. 文章章節與盒子模型：純白背景搭配淡藍框線 */
+section, aside {
+    margin: 24px 0;
+    padding: 24px 28px;
+    background-color: #FFFFFF;
+    border: 1px solid #cdd9ed;
+    border-radius: 10px;
+}
+
+/* 章節標題：東協紅左框線搭配東協藍文字 */
+h2 {
+    margin: 0 0 18px;
+    padding-left: 12px;
+    border-left: 5px solid #EE1C25;
+    color: #0033A0;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+h3 {
+    margin: 22px 0 10px;
+    font-size: 1.1rem;
+    color: #0033A0;
+}
+
+p {
+    margin: 12px 0;
+}
+
+ul, ol {
+    padding-left: 1.6em;
+}
+
+li {
+    margin: 8px 0;
+}
+
+hr {
+    margin: 26px 0;
+    border: 0;
+    border-top: 1px solid #cdd9ed;
+}
+
+/* 5. 表格：表頭採用東協藍，列標題採用淺稻穗黃 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+    overflow-wrap: anywhere;
+    margin-bottom: 16px;
+}
+
+caption {
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #0033A0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #b8c7e0;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead {
+    background-color: #0033A0;
+    color: #FFFFFF;
+}
+
+tbody th {
+    background-color: #fff9db;
+    color: #1a2536;
+}
+
+/* 6. 圖片與嵌入媒體 */
+figure {
+    margin: 18px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #4a5a75;
+    font-size: 0.85em;
+}
+
+iframe {
+    display: block;
+    max-width: 100%;
+    border: 0;
+    border-radius: 6px;
+}
+
+.video-frame {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.map-frame {
+    width: 100%;
+    height: 340px;
+}
+
+/* 7. 補充區 (#tips)：採用淺稻穗黃底色搭配東協黃左框線 */
+#tips {
+    background-color: #fffbeb;
+    border: 1px solid #f5dfa2;
+    border-left: 6px solid #FFD100;
+}
+
+
+
+
+footer {
+    margin-top: 32px;
+    padding: 20px 0;
+    border-top: 3px solid #a00000;
+    color: #4a5a75;
+    text-align: center;
+}
+
+/* 8. RWD 窄視窗設定：手機版時外框圓角適度收斂，但按鈕維持完美橢圓形 */
+@media (max-width: 600px) {
+    body {
+        padding: 16px 12px;
+        font-size: 16px;
+    }
+
+    header, section, aside {
+        padding: 20px 16px;
+    }
+
+    nav {
+        padding: 18px 16px;
+        border-radius: 32px;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* 9. 三處遷移類別：搭配東協稻穗黃與東協紅 */
+.reading-focus {
+    background-color: #FFD100;
+    color: #002060;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.follow {
+    border-left: 4px solid #EE1C25;
+    padding-left: 14px;
+}
+
+.info {
+    font-style: italic;
+    color: #e6eefc;
+}
